@@ -1,0 +1,1 @@
+# lic25informatykazt.github.io
