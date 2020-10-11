@@ -1,0 +1,195 @@
+﻿body {
+ font-family: Helvetica, sans-serif;
+ margin: 0;
+ padding: 0;
+}
+/* Стилі класу main-content  */
+.main-menu *{
+ margin: 0;
+ padding: 0;
+}
+.main-menu ul, .main-menu ol {
+ list-style: none;
+}
+
+/* Стилі для маркерованого списку в main-menu */
+.main-menu > ul {
+ display: flex;
+ justify-content: center;
+ position: relative;
+
+ top: 0;
+ left: 50%;
+ transform: translateX(-50%);
+}
+/* Посилання у списку */
+.main-menu > ul li a {
+ display: block;
+ text-align: center;
+ background: blue;
+ padding: 15px 30px 15px 40px;
+ font-size: 22px;
+ color: #ffffff;
+ text-decoration: none;
+ text-transform: uppercase;
+ transition: all 0.2s ease;
+}
+/* Позиціонування елементів li у списку */
+.main-menu > ul li {
+ position: relative;
+ border-right: 1px solid #000;
+ width: 350px;
+}
+
+/* Рамка зліва та справа головного меню через 
+псевдо-клас first-child та last-child */
+.main-menu > ul li:first-child{
+ border-left: 1px solid #b2b3b5;
+}
+.main-menu > ul li:last-child{
+ border-right: 1px solid #babbbb;
+}
+
+/* Анімація при наведенні на посилання */
+.main-menu li a:hover {
+ background: #00a;
+ color: #ffffff;
+ box-shadow: 1px 5px 10px -5px #000000;
+ transition: all 0.2s ease;
+}
+
+/* Меню на МАТЕРІАЛ ДЛЯ УРОКІВ */
+/* Список у елементі li */
+.main-menu li ul {
+ position: absolute;
+ min-width: 215px;
+ display: none;
+}
+
+/* Рамка для блоку li усередині списку ul, що
+знаходиться усередині елементу li у шапці класа 
+main-menu */
+.main-menu li > ul li {
+ border: 2px solid #88f;
+}
+/* Стилі для посилань усередині li усередині 
+списку ul, що знаходиться усередині елементу 
+li у шапці класа 
+main-menu */
+.main-menu li > ul li a {
+ padding: 9px;
+ background: #0024b9;
+ text-align: left;
+}
+.main-menu li > ul li a:hover {
+ background: #000379;
+}
+
+/* Показ підсписку при наведенні на елемент i, 
+що має у собі сам підсписок */
+.main-menu li:hover > ul {
+ display: block;
+}
+/* Привітання на сайті після шапки сайту */
+.main-header {
+ text-align: center;
+ background-color: #33f;
+ position: relative;
+ z-index: -99;
+}
+.main-title {
+ font-size: 32pt;
+ color: #fff;
+}
+
+/* Блок Про школу */
+.aboutSchool {
+	border: 5px outset #22d;
+	padding: 1rem 2.5rem;
+	color: #fff;
+	font-size: 24px;
+	
+	background-color: #284cee;
+	position: relative;
+	z-index: -9999;
+}
+.imgAboutSchool {
+	margin: 0 auto;
+	position: relative;
+	z-index: -98;
+	width: 400px;
+	height: 250px;
+	border: 5px solid #11c;
+}
+.main-text {
+	position: relative;
+	z-index: -1;
+}
+
+/* Блок з новинами та місцезнаходженням школи */
+.news_map {
+	position: relative;
+	z-index: 1;
+}
+
+.news {
+	border: 5px outset #22d;
+	background-color: #395dff;
+	padding: 10px;
+	font-size: 20px;
+	color: #fff;
+	width: 400px;
+	float: left;
+}
+a {
+	color: #fff;
+	text-decoration: underline;
+}
+.news_details {
+	margin: 0;
+	padding: 2px;
+	font-size: 19px;
+	width: 100%;
+}
+
+.map {
+	text-align: center;
+	border: 5px outset #22d;
+	padding: 10px;
+	background-color: #395dff;
+	font-size: 24px;
+	color: #fff;
+	width: 710px;
+	float: right;
+}
+.img_map {
+	width: 400px;
+	height: 250px;
+}
+
+footer {
+	background-color: #eee;
+	height: 100px;
+	width: 100%;
+	text-align: right;
+	font-size: 20px;
+	color: #555;
+	margin: 0;
+	padding: 5px;
+}
+
+
+
+.main-menu [type="checkbox"],
+.main-menu label.toggleSubmenu{
+	display: none;
+}
+.main-menu label.toggleMenu {
+	background: #c9c9c9;
+	display: none;
+	padding: 15px 40px;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+	position: relative;
+}
